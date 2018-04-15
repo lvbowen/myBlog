@@ -1,2 +1,9 @@
-# myBlog
-个人博客，对技术点进行记录、总结，便于以后查阅
+# git常用命令 
+
+代码提交  
+```
+    git add . 
+    git commit -m "注释" 
+    git pull  
+    git push 
+```
