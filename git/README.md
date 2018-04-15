@@ -1,6 +1,6 @@
-# git常用命令 
+## git常用命令 
 
-代码提交  
+    提交代码
 ```
     git add . 
     git commit -m "注释" 
