@@ -1,11 +1,5 @@
 ## git常用命令 
-提交代码：
-```
-git add . 
-git commit -m "注释" 
-git pull    //更新远程到本地
-git push    //推到远程
-```
+
 新建代码库：  
 ```
 git init    //在当前目录新建一个Git代码库  
@@ -47,7 +41,8 @@ git push origin --delete [branch]       //删除远程分支
 git branch -dr [remote/branch]      //删除远程分支  
 ```
 
-扩展阅读：<a href="http://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html" target="_blank">常用git命令清单</a>
+扩展阅读：<a href="http://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html" target="_blank">常用git命令清单</a>  
+[常用git命令清单](http://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html)
 
 
 
