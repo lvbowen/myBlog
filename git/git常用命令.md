@@ -42,7 +42,7 @@ git branch -dr [remote/branch]      //删除远程分支  
 ```
 
 扩展阅读：<a href="http://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html" target="_blank">常用git命令清单</a>  
-[常用git命令清单](http://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html)
+
 
 
 
