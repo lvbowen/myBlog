@@ -41,7 +41,7 @@ git push origin --delete [branch]       //删除远程分支
 git branch -dr [remote/branch]      //删除远程分支  
 ```
 
-扩展阅读：<a href="http://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html" target="_blank">常用git命令清单</a>  
+扩展阅读：<a href="http://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html" target="_blank" style="margin-right:10px;">常用git命令清单</a>       [git远程操作](http://www.ruanyifeng.com/blog/2014/06/git_remote.html)
 
 
 
