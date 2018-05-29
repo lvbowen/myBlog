@@ -32,7 +32,8 @@ git branch [branch] [commit]      //新建一个分支，指向指定commit
 git branch --track [branch] [remote-branch]     //新建一个分支，与指定的远程分支建立追踪关系  
 git branch --set-upstream [branch] [remote-branch]      //建立追踪关系，在现有分支与指定的远程分支之间  
 git branch -d [branch]     //删除本地分支  
-git checkout [branch]     //切换到指定分支，并更新工作区; 若该指定分支本地没有而远程有，则会新建一个分支并切换过去且与远程同名分支建立追踪关系  
+git branch -m [oldBranchName] [newBranchName]   //修改本地分支名称
+git checkout [branch]     //切换到指定分支，并更新工作区; 若该指定分支本地没有而远程有，则会新建一个分支并切换过去且与远程同名分支建立追踪关系  
 git checkout -b [branch]      //新建一个分支，并切换到该分支   
 git checkout -      //切换到上一个分支   
 git merge [branch]      //合并指定分支到当前分支  
