@@ -21,6 +21,7 @@ git commit -m [message]     //提交暂存区到仓库区
 git commit [file1] [file2] ... -m [message]     //提交暂存区的指定文件到仓库区  
 git commit -v     //提交时显示所有diff信息  
 git commit --amend -m [message]     //使用一次新的commit，替代上一次提交,改写提交信息  
+git commit -a -m [message]          //一句命令将modified的文件提交到暂存区再到仓库区，如果有新文件还是需要先git add 
 ```
 分支：
 ```
@@ -41,6 +42,10 @@ git cherry-pick [commit]      //选择一个commit，合并进当前分支
 git push origin --delete [branch]       //删除远程分支  
 git branch -dr [remote/branch]      //删除远程分支  
 ```
+其他：  
+ ```
+ git remote -v      //查看项目的远程地址
+ ``` 
 
 扩展阅读：<a href="http://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html" target="_blank" style="margin-right:10px;">常用git命令清单</a>       [git远程操作](http://www.ruanyifeng.com/blog/2014/06/git_remote.html)
 
