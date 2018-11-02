@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Image对象实现预加载</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script> -->
+</head>
+<body>
+    <img src="https://aijuhr.com/4.png" alt="" id="img">
+    <p>
+        <button id="btn">换一张</button>
+    </p>
+    <script>
+        window.onload = ()=>{
+            let imgs = [
+                'https://aijuhr.com/3.png',
+                'https://aijuhr.com/2.png',
+                'https://aijuhr.com/1.png'
+            ]
+            let img = document.getElementById('img');
+            let btn = document.getElementById('btn');
+            let index = 0;
+            let count = 0;
+
+            for(let i = 0; i < imgs.length; i++){
+                let imgObj = new Image();
+                imgObj.addEventListener('load',(e)=>{
+                    count++;
+                    if(count == imgs.length){
+                        console.log('所有图片预加载完成')
+                    }                 
+                })
+                imgObj.src = imgs[i];    //先把图片预加载下来，后面切换的时候就不会再去请求图片了，
+                                         //通过network能看到，不要勾选Disable cache（清除缓存）
+                                         //会存在内存或磁盘中，from memory cache  或 from disk cache
+            }
+
+            btn.onclick = () => {
+                if(index == 3){
+                    index = 0;
+                }
+                img.src = imgs[index++]
+            }
+        }
+    </script>
+</body>
+</html>
