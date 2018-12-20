@@ -1,5 +1,5 @@
 
-### vue-loader  
+## vue-loader  
 给样式文件或图片目录设置别名后，在.vue文件引入的时候需要加~，[参考](https://github.com/vuejs/vue-loader/issues/193)
 ```
   alias: {
