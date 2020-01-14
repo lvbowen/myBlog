@@ -1,4 +1,4 @@
-##Jest 单元测试（一）
+## Jest 单元测试（一）
 
 Jest既简单又强大，内置支持以下功能：
 
@@ -12,7 +12,7 @@ Jest既简单又强大，内置支持以下功能：
 
 
 
-###引入 Jest & vue/test-utils
+### 引入 Jest & vue/test-utils
 
 - npm install --save-dev jest @vue/test-utils
 
@@ -43,7 +43,7 @@ module.exports = {
 
 
 
-###执行测试用例
+### 执行测试用例
 
 ```
 // 执行测试用例
@@ -54,7 +54,7 @@ npx jest xxx.spec.js -u
 
 
 
-###Matcher 匹配器 [API](<https://jestjs.io/docs/en/expect.html>)
+### Matcher 匹配器 [API](<https://jestjs.io/docs/en/expect.html>)
 
 - 相等匹配
   - 使用 toBe 来比较字符串,数字或布尔值等基本数据类型
@@ -72,7 +72,7 @@ npx jest xxx.spec.js -u
 
 
 
-###测试异步代码
+### 测试异步代码
 
 - callback
 
